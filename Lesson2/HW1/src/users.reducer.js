@@ -9,7 +9,7 @@ export const usersReducer = (state = initialState, action) => {
         case ADD_USER:
             return{
                 ...state,
-                usersList:state.usersList.concat(action.user)
+                usersList:state.usersList.concat(action.user),
             }
         case DELETE_USER:
             return{
