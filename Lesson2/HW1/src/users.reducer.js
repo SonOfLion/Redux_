@@ -4,7 +4,7 @@ const initialState = {
     usersList: []
 }
 
-export const usersReducer = (state = initialState, action) => {
+export const usersReducer = (state = initialState, action) => {//previousState , action => nextState
     switch(action.type){
         case ADD_USER:
             return{
