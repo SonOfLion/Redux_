@@ -1,7 +1,7 @@
 import { INCREMENT, DECREMENT, RESET } from '../src/counter.actions';
 
 const counterReducer = (state = 0, action) => {
-    switch(action.type){
+    switch (action.type) {
         case INCREMENT:
             return state + 1;
         case DECREMENT:
@@ -9,8 +9,8 @@ const counterReducer = (state = 0, action) => {
         case RESET:
             return 0;
         default:
-            return state;
+            return 0;
     }
-}
+};
 
 export default counterReducer;
