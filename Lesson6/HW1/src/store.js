@@ -3,7 +3,7 @@ import thunk from "redux-thunk";
 import { weatherReducer } from "../src/weather/weather.reducer";
 
 const reducer = combineReducers({
-    eather: weatherReducer,
+    weather: weatherReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
